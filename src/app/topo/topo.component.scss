@@ -1,0 +1,18 @@
+span{
+    // color: #ffffff;
+    font-weight: bold;
+}
+
+.disabled {
+    pointer-events: none;  /* Desativa qualquer interação com o link */
+    color: gray;  /* Muda a cor para indicar que o link está desabilitado */
+    cursor: not-allowed;  /* Muda o cursor para indicar que não é clicável */
+  }
+
+  .s-blue {
+    color: blue;
+  }
+  
+  .c-red {
+    color: red;
+  }

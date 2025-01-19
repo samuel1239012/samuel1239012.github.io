@@ -1,0 +1,66 @@
+<div class="container-fluid">
+
+  <div class="logo-container" [class.loading]="isLoading">
+    <span class="logo">SC</span>
+  </div>
+  
+
+  <!-- Mensagem de Boas-Vindas -->
+  <div class="sheik" id="message" style="display:none;">
+    <h5>Olá seja bem-vindo, explore meu portfólio e descubra meu conhecimento</h5>
+  </div>
+
+  <!-- <div class="apresentacao">
+    <span>Olá meu nome é</span>
+    <h5>Samuel Costa</h5>
+  </div> -->
+
+  <section class="intro" id="home">
+    <div class="intro-text">
+      <span>Olá meu nome é</span>
+      <h2>Samuel Costa</h2>
+      <p>Sou um desenvolvedor Full-Stack e Mobile júnior, com formação técnica em Informática e Informática para
+        Internet, e atualmente cursando Engenharia de Software. Sou apaixonado por tecnologia e motivado pelas suas
+        possibilidades ilimitadas, sempre em busca de me atualizar em um mundo em constante evolução.</p>
+      <!-- <a href="https://wa.me/5512996762054" target="_blank">
+        <button class="contact-btn">Contact me</button>
+      </a> -->
+    </div>
+    <!-- <div class="intro-image">
+      <div class="image-container">
+        <div class="background-box"></div>
+        <img src="assets/images/foto-samuel-perfil-sem-fundo.png" alt="Samuel Costa" />
+      </div>
+    </div> -->
+  </section>
+
+  <div class="aboutme" id="aboutme">
+    <h1
+      style="color: #fff; text-align: center; font-family: 'Dancing Script', cursive; font-style: italic; color: #fff;">
+      About-me</h1>
+    <app-about></app-about>
+
+    
+  </div>
+
+  <div class="skills" id="skills">
+    <h1
+      style="color: #fff; text-align: center; font-family: 'Dancing Script', cursive; font-style: italic; color: #fff;">
+      Skills</h1>
+    <app-skills></app-skills>
+
+    <main>
+      <div class="cube" style="position: absolute;   left: 5%;">
+          <div class="front"></div>
+          <div class="back"></div>
+          <div class="left"></div>
+          <div class="right"></div>
+          <div class="top"></div>
+          <div class="bottom"></div>
+      </div>
+  </main>
+  </div>
+
+
+  <app-footer></app-footer>
+</div>

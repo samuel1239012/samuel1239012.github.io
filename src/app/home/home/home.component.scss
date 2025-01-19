@@ -1,0 +1,301 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  background-color: #1B1F3B;
+  }
+
+  .topo{
+    display: flex;
+    width: 100%;
+
+    app-topo {
+      width: 100%;
+      background-color: #1B1F3B;
+    }
+
+}
+
+.sheik{
+  color: #fff;
+}
+
+#message {
+  position: fixed;  /* Para garantir que apareça no topo da página */
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Suaviza o desaparecimento */
+  z-index: 9999;
+}
+
+#message.fade-out {
+  opacity: 0;
+}
+
+// .apresentacao{
+  
+//   text-align: center;
+//   align-items: center;
+//   span{
+//     background: linear-gradient(to right, red, rgb(77, 1, 255));
+//     -webkit-background-clip: text;
+//     color: transparent;
+//     font-size: 1.8rem;
+//   }
+
+//   h5{
+//     color: #fff;
+//   }
+// }
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.intro-text {
+  max-width: 50%;
+
+    span{
+    background: linear-gradient(to right, #ff0000, rgb(77, 1, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8rem;
+  }
+  
+  button:hover{
+    background-color: #333;
+  }
+
+}
+
+.intro-text h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: #283D6A;
+  border: none;
+  border-radius: 15px;
+  color: #ffff;
+  cursor: pointer;
+
+ 
+}
+
+// .intro-image {
+//   display: inline-block; /* Para envolver a imagem */
+//   background-color: rgb(255, 255, 255); /* Fundo vermelho */
+//   padding: 10px; /* Espaçamento para destacar o fundo */
+//   border: 3px solid black; /* Borda preta ao redor do fundo */
+// }
+
+// .intro-image img {
+//   width: 150px; /* Ajuste conforme necessário */
+//   height: auto;
+//   filter: grayscale(100%) contrast(1.5) brightness(0.8); /* Tons escuros e preto e branco */
+//   display: block; /* Remove espaço extra ao redor da imagem */
+// }
+/* Container geral */
+.intro-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Caixa de fundo (com alto relevo) */
+.background-box {
+  width: 180px; /* Ajuste o tamanho do quadrado */
+  height: 200px;
+  // background-color: rgb(255, 255, 255); /* Fundo branco para contraste */
+  // border: 3px solid black; /* Borda preta ao redor */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombras para dar o efeito de relevo */
+  position: relative;
+  z-index: 1; /* Certifica que a caixa fica atrás da imagem */
+}
+
+/* Estilo da imagem */
+.image-container img {
+  position: absolute;
+  width: 180px; /* Tamanho da imagem maior que o quadrado */
+  top: -40px; /* Ajuste para fazer a imagem sair da moldura */
+  z-index: 2; /* Garante que a imagem fique acima da caixa */
+  
+}
+
+/* Centralização do contêiner */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tela de carregamento com fundo branco */
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Fundo branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  visibility: hidden; /* Esconde até ser ativado */
+}
+
+.logo-container.loading {
+  visibility: visible; /* Torna visível quando "loading" for true */
+}
+
+/* Estilo da logo (SC) */
+.logo {
+  font-size: 4rem; /* Tamanho grande para a logo */
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5rem;
+  color: transparent; /* Torna a cor do texto transparente para aplicar a borda */
+  background-image: linear-gradient(to right, blue 50%, red 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  box-shadow: inset 0 0 0 2px transparent; /* Inicialmente sem contorno */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+
+@keyframes borderEffect {
+  0% {
+    box-shadow: inset 0 0 0 2px transparent, 0 0 10px white;
+  }
+  25% {
+    box-shadow: inset 0 0 0 2px transparent, 10px 0 10px white;
+  }
+  50% {
+    box-shadow: inset 0 0 0 2px transparent, 20px 0 10px white;
+  }
+  75% {
+    box-shadow: inset 0 0 0 2px transparent, 30px 0 10px white;
+  }
+  100% {
+    box-shadow: inset 0 0 0 2px transparent, 40px 0 10px white;
+  }
+}
+
+@keyframes borderEffect {
+  0% {
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 2px #ff0000; /* Cor inicial do contorno */
+  }
+  25% {
+    border: 5px solid transparent;
+    box-shadow: 10px 0 0 2px #ff0000, 0 0 0 2px rgba(0, 0, 255);
+  }
+  50% {
+    border: 5px solid transparent;
+    box-shadow: 10px 0 0 2px #ff0000, 0 10px 0 2px rgba(0, 0, 255);
+  }
+  75% {
+    border: 5px solid transparent;
+    box-shadow: 10px 0 0 2px rgba(255, 0, 0, 0.8), 0 10px 0 2px rgb(75, 75, 239), 0 0 10px 2px rgba(0, 0, 255, 0.8);
+  }
+  100% {
+    border: 5px solid transparent;
+    box-shadow: 10px 0 0 2px rgba(255, 0, 0, 0.8), 0 10px 0 2px rgb(75, 75, 239), 0 0 10px 2px rgba(0, 0, 255, 0.8), 10px 0 0 2px rgba(255, 255, 0, 0.8);
+  }
+}
+
+/* Para animar a borda correndo ao redor da imagem */
+.logo-container.loading .logo {
+  animation: borderEffect 2s linear infinite; /* Animação que fica em loop */
+}
+
+
+
+
+//CUBO//
+
+.cube {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+      transform: rotateX(360deg) rotateY(360deg);
+  } 
+}
+
+.cube div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.front { 
+  transform: translateZ(50px);
+  background-image: url('../../../assets/images/html_plain_wordmark_logo_icon_146476.png'); /* Substitua 'front.jpg' pelo caminho da sua imagem para a face frontal */
+}
+.back { 
+  transform: rotateY(180deg) translateZ(50px);
+  background-image: url('../../../assets/images/Typescript_logo_2020.svg.png'); /* Substitua 'back.jpg' pelo caminho da sua imagem para a face traseira */
+}
+.left { 
+  transform: rotateY(-90deg) translateZ(50px);
+  background-image: url('../../../assets/images/Angular_full_color_logo.svg.png'); /* Substitua 'left.jpg' pelo caminho da sua imagem para a face esquerda */
+}
+.right { 
+  transform: rotateY(90deg) translateZ(50px);
+  background-image: url('../../../assets/images/Webysther_20160423_-_Elephpant.svg.png'); /* Substitua 'right.jpg' pelo caminho da sua imagem para a face direita */
+}
+.top { 
+  transform: rotateX(-90deg) translateZ(50px);
+  background-image: url('../../../assets/images/css-3-icon.png'); /* Substitua 'top.jpg' pelo caminho da sua imagem para a face superior */
+}
+.bottom { 
+  transform: rotateX(90deg) translateZ(50px);
+  background-image: url('../../../assets/images/Sql_logo.png'); /* Substitua 'bottom.jpg' pelo caminho da sua imagem para a face inferior */
+}
+
+/* Consulta de mídia para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .cube {
+      width: 30px;
+      height: 30px;
+  }
+
+  .cube div {
+      width: 30px;
+      height: 30px;
+  }
+}
+

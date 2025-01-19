@@ -1,0 +1,86 @@
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .column {
+    width: 48%;
+  }
+  
+  .skill {
+    margin-bottom: 10px;
+  }
+  .skill-value i {
+    font-size: 1rem; /* Ajusta o tamanho do ícone */
+  }
+  
+  .skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 15px;
+    position: relative; /* Necessário para o posicionamento do valor */
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+  }
+  
+  .skill-value {
+    position: absolute;
+    right: 0; /* Alinha o valor à direita da barra */
+    top: 50%; /* Alinha verticalmente no meio da barra */
+    transform: translateY(-50%); /* Corrige o alinhamento vertical */
+    font-weight: bold;
+    color: #000000;
+    padding-right: 10px; /* Adiciona um espaço à direita do valor */
+  }
+
+  h5{
+    color: #fff;
+  }
+  
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .info-card p {
+    margin: 0 0 10px;
+  }
+  
+  .info-card button {
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-card button:hover {
+    background-color: #d32f2f;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,113 @@
+<div class="skills">
+  <!-- Coluna 1 -->
+  <div class="column">
+    <div class="skill">
+      <h5>PHP</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 85%;"></div>
+        <span class="skill-value">85% <i class="bi bi-info-circle text-blue" title="Informações sobre PHP" (click)="toggleCard('php')"></i></span>
+      </div>
+    </div>
+
+    <!-- Card de Informações -->
+    <div class="info-card" *ngIf="activeCard === 'php'">
+      <p>Com o PHP, costumo desenvolver as APIs para os projetos que crio, garantindo funcionalidade e integração eficazes..</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>TypeScript</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 70%;"></div>
+        <span class="skill-value">70% <i class="bi bi-info-circle text-blue" title="Informações sobre TypeScript" (click)="toggleCard('TypeScript')"></i> </span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'TypeScript'">
+      <p>Com o TypeScript, costumo desenvolver os diferenciais dos meus sites, proporcionando maior robustez e interatividade.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>SQL</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 85%;"></div>
+        <span class="skill-value">85% <i class="bi bi-info-circle text-blue" title="Informações sobre Python" (click)="toggleCard('Sql')"></i></span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'Sql'">
+      <p>Com o SQL, costumo estruturar e otimizar bancos de dados, garantindo maior eficiência, organização e rapidez no acesso às informações.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>HTML 5</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 100%;"></div>
+        <span class="skill-value">100% <i class="bi bi-info-circle text-blue" title="Informações sobre HTML5" (click)="toggleCard('HTML5')"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card" *ngIf="activeCard === 'HTML5'">
+    <p>Tenho bastante familiaridade com o HTML5, pois é uma linguagem de marcação fundamental para o desenvolvimento web, sendo uma das que mais utilizo em conjunto com o CSS. </p>
+    <button (click)="toggleCard('')">Fechar</button>
+  </div>
+
+  <!-- Coluna 2 -->
+  <div class="column">
+    <div class="skill">
+      <h5>CSS</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 95%;"></div>
+        <span class="skill-value">95% <i class="bi bi-info-circle text-blue" title="Informações sobre CSS" (click)="toggleCard('CSS')"></i></span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'CSS'">
+      <p>Tenho bastante familiaridade com o CSS, pois é uma linguagem fundamental para o design e estilo das páginas web, sendo uma das que mais utilizo em conjunto com o HTML5.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>Angular Cli</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 90%;"></div>
+        <span class="skill-value">90% <i class="bi bi-info-circle text-blue" title="Informações sobre Angular Cli" (click)="toggleCard('angular')"></i></span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'angular'">
+      <p>Acredito que o Angular seja um framework altamente eficaz para o desenvolvimento de aplicações web, proporcionando estrutura e escalabilidade.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>Ionic</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 90%;"></div>
+        <span class="skill-value">90% <i class="bi bi-info-circle text-blue" title="Informações sobre Ionic" (click)="toggleCard('ionic')"></i></span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'ionic'">
+      <p>Ionic é um framework para desenvolvimento de aplicativos móveis híbridos, utilizando HTML, CSS e JavaScript para criar apps para iOS, Android e web com uma base de código única.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+    <div class="skill">
+      <h5>VB</h5>
+      <div class="skill-bar">
+        <div class="progress" style="width: 50%;"></div>
+        <span class="skill-value">50% <i class="bi bi-info-circle text-blue" title="Informações sobre VB" (click)="toggleCard('vb')"></i></span>
+      </div>
+    </div>
+
+    <div class="info-card" *ngIf="activeCard === 'vb'">
+      <p>Utilizo principalmente o Visual Basic .NET no desenvolvimento de sistemas empresariais, aproveitando suas funcionalidades para criar soluções eficientes e robustas.</p>
+      <button (click)="toggleCard('')">Fechar</button>
+    </div>
+
+  </div>
+</div>

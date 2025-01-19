@@ -1,0 +1,87 @@
+.intro {
+    display: flex;
+    justify-content: flex-start; /* Alinha a foto e o texto à esquerda */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre a foto e o texto */
+  }
+
+.intro-text {
+    max-width: 85%;
+  
+      h6{
+        color: #fff;
+      }
+
+      p{
+        color: #fff;
+      }
+  
+  }
+
+  // .contact-btn {
+  //   padding: 10px 20px;
+  //   background-color: #FF5733;
+  //   border: none;
+  //   color: #fff;
+  //   cursor: pointer;
+  // }
+  
+.contact-btn {
+  background-color: #FF5733; /* Cor do botão */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 15px; /* Adiciona espaço à direita do botão */
+}
+  /* Caixa de fundo (com alto relevo) */
+  .background-box {
+    width: 180px; /* Ajuste o tamanho do quadrado */
+    height: 200px;
+    // background-color: rgb(255, 255, 255); /* Fundo branco para contraste */
+    // border: 3px solid black; /* Borda preta ao redor */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombras para dar o efeito de relevo */
+    position: relative;
+    z-index: 1; /* Certifica que a caixa fica atrás da imagem */
+  }
+  
+  /* Estilo da imagem */
+  .image-container img {
+    position: absolute;
+    width: 180px; /* Tamanho da imagem maior que o quadrado */
+    top: -40px; /* Ajuste para fazer a imagem sair da moldura */
+    z-index: 2; /* Garante que a imagem fique acima da caixa */
+    
+  }
+  
+  /* Centralização do contêiner */
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Cor do link */
+.bi-linkedin a {
+  color: #0077b5; /* Cor padrão */
+  text-decoration: none; /* Remover underline */
+}
+
+/* Mudando a cor do link quando passar o mouse */
+.bi-linkedin a:hover {
+  color: #0a66c2; /* Nova cor ao passar o mouse */
+}
+
+.bi-linkedin {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #0077b5;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none; /* Remove underline do link */
+}
+
+
